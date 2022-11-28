@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:TapGestureIssue.Controls"
              x:Class="TapGestureIssue.MainPage">
 
     <ScrollView>
@@ -8,6 +9,11 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
+
+            <controls:CustomCheckBox Text="Clicking this message should toggle the checkbox."/>
+
+            <controls:CustomCheckBox Text="Clicking this message should toggle the checkbox." ControlTemplate="{StaticResource CustomCheckBoxControlTemplate}"/>
+
 
             <Image
                 Source="dotnet_bot.png"
